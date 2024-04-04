@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Exercise Feedback</title>
+  </head>
+  <body>
+    <h2>Exercise Feedback Form</h2>
+    <form action="/submit_exercise_feedback" method="post">
+      <label for="userID">User ID:</label><br />
+      <input type="number" id="userID" name="userID" required /><br />
+      <label for="exerciseID">Exercise ID:</label><br />
+      <input type="number" id="exerciseID" name="exerciseID" required /><br />
+      <label for="comments">Comments:</label><br />
+      <textarea id="comments" name="comments"></textarea><br />
+      <label for="improvementTips">Improvement Tips:</label><br />
+      <textarea id="improvementTips" name="improvementTips"></textarea><br />
+      <input type="submit" value="Submit Feedback" />
+    </form>
+  </body>
+</html>

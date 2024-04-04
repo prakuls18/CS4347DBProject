@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Performance Video Submission</title>
+  </head>
+  <body>
+    <h2>Performance Video Submission Form</h2>
+    <form action="/submit_performance_video" method="post">
+      <label for="userID">User ID:</label><br />
+      <input type="number" id="userID" name="userID" required /><br />
+      <label for="exerciseID">Exercise ID:</label><br />
+      <input type="number" id="exerciseID" name="exerciseID" required /><br />
+      <label for="videoURL">Video URL:</label><br />
+      <input type="url" id="videoURL" name="videoURL" required /><br />
+      <label for="score">Score:</label><br />
+      <input type="number" id="score" name="score" /><br />
+      <input type="submit" value="Submit Video" />
+    </form>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Exercise Submission</title>
+  </head>
+  <body>
+    <h2>Exercise Submission Form</h2>
+    <form action="/submit_exercise" method="post">
+      <label for="name">Exercise Name:</label><br />
+      <input type="text" id="name" name="name" required /><br />
+      <label for="description">Description:</label><br />
+      <textarea id="description" name="description" required></textarea><br />
+      <label for="targetArea">Target Area:</label><br />
+      <input type="text" id="targetArea" name="targetArea" required /><br />
+      <label for="difficultyLevel">Difficulty Level:</label><br />
+      <input
+        type="number"
+        id="difficultyLevel"
+        name="difficultyLevel"
+        required
+      /><br />
+      <input type="submit" value="Submit Exercise" />
+    </form>
+  </body>
+</html>
