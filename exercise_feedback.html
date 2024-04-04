@@ -1,20 +1,50 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Exercise Feedback</title>
-  </head>
-  <body>
-    <h2>Exercise Feedback Form</h2>
-    <form action="/submit_exercise_feedback" method="post">
-      <label for="userID">User ID:</label><br />
-      <input type="number" id="userID" name="userID" required /><br />
-      <label for="exerciseID">Exercise ID:</label><br />
-      <input type="number" id="exerciseID" name="exerciseID" required /><br />
-      <label for="comments">Comments:</label><br />
-      <textarea id="comments" name="comments"></textarea><br />
-      <label for="improvementTips">Improvement Tips:</label><br />
-      <textarea id="improvementTips" name="improvementTips"></textarea><br />
-      <input type="submit" value="Submit Feedback" />
-    </form>
-  </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Performance Analysis and Feedback</title>
+</head>
+<body>
+    <h1>Performance Analysis and Feedback</h1>
+    <div id="feedbackContainer">
+        <section id="videoAnalysis">
+            <h2>Your Video Analysis</h2>
+            <!-- Placeholder for the uploaded exercise video -->
+            <video controls width="250">
+                <source src="/path/to/uploaded_video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <!-- Placeholder for the ideal exercise video for comparison -->
+            <h3>Ideal Performance</h3>
+            <video controls width="250">
+                <source src="/path/to/ideal_video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+
+        <section id="performanceScore">
+            <h2>Performance Score</h2>
+            <p><!-- Score will be dynamically inserted here -->75/100</p>
+        </section>
+
+        <section id="visualHighlights">
+            <h2>Visual Highlights of Discrepancies</h2>
+            <p><!-- Dynamic content describing discrepancies --></p>
+            <img src="/path/to/discrepancy_highlight.png" alt="Highlight of Discrepancy">
+        </section>
+
+        <section id="writtenFeedback">
+            <h2>Written Feedback for Improvement</h2>
+            <p>
+                Great effort on your latest session! Here are a few tips to improve your form:
+                <ul>
+                    <li>Keep your back straight to engage your core effectively.</li>
+                    <li>Try to maintain a steady pace throughout your exercise.</li>
+                    <li>Focus on the alignment of your shoulders during the plank.</li>
+                </ul>
+            </p>
+        </section>
+    </div>
+</body>
 </html>
